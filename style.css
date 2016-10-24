@@ -1,0 +1,415 @@
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.main-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
+/* ==========================================================================
+    Structure & Defaults
+   ========================================================================== */
+html, body {
+  font-size: 100%;
+  max-width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: baseline;
+}
+
+body {
+  font: 13px/21px "Open Sans", Arial, sans-serif;
+  color: #838383;
+  background-color: #fff;
+  overflow-x:hidden;
+}
+
+a {
+  color: #26b864;
+  text-decoration: none !important;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+a:hover {
+  color: #f5a200;
+}
+  
+
+/* ==========================================================================
+    Header Site Styling
+   ========================================================================== */
+.site-header {
+  position: fixed;
+  min-height: 60px;
+  height: 50px;
+  width: 100%;
+  z-index: 9999;
+  background-color: #4dcb43;
+}
+
+#site_logo {
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  height: 50px;
+  display: block;
+}
+
+.main-menu {
+  position: relative;
+}
+.main-menu ul {
+  position: absolute;
+  width: 100%;
+}
+.main-menu ul li {
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+}
+#li_home,
+#li_course{
+  width: 110px;
+}
+/*
+#li_home a,
+#li_course a,
+#li_ask a,
+#li_session a,
+#li_practice a{
+  font-size:15px;
+}*/
+
+#li_session,
+#li_practice,
+#li_ask{
+  width: 180px;
+}
+.main-menu ul li a{
+  color: white;
+  font-weight: 2400;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  display: block;
+}
+.main-menu ul li a.current {
+  background: url(../images/active-state.png) no-repeat;
+  background-position: center 27px;
+}
+.toggle-menu {
+  display: none;
+  margin: 15px 35px 0 0;
+  color: white;
+  text-align: right;
+}
+
+.responsive .main-menu {
+  display: none;
+}
+.responsive .main-menu ul li {
+  width: 100%;
+  background-color:#0b6306;
+}
+.responsive .main-menu ul li a {
+  line-height: 40px;
+  padding: 10px 20px 0 0;
+}
+.responsive .main-menu ul li a.current {
+  background-image: none;
+  color: #26b864;
+  border-bottom: 0;
+}
+
+/* ==========================================================================
+    Inner Body Styling
+   ========================================================================== */
+.section-home{
+	height:560px;
+	width:100%;
+	position:relative;
+}
+.slider-body{
+	padding-top:60px;
+	position:relative;
+}
+#course{
+	height:260px;
+	width:100%;
+	position:relative;
+	margin-top:10px;
+}
+#course_block{
+	height:300px;
+	position:relative;
+	background-color:#009900;
+}
+#course_description {
+	text-align:center;
+	color:#fff;
+	/*font-size:15px;*/
+	margin-top:60px;
+}
+#final_course{
+	text-align:center;
+	color:#fff;
+	/*font-size:15px;*/
+	margin-top:100px;
+}
+#go_course,
+#session_tutor,
+#session_button,
+#ask_button,
+#go_practice{
+	background:transparent;
+	border:2px #006600 solid;
+	color:#fff;
+	border-radius:0;
+	/*font-weight:600;*/
+}
+#go_course:hover, 
+#session_tutor:hover, 
+#session_button:hover, 
+#ask_button:hover, 
+#go_practice:hover{
+	background-color:#fff;
+	color:#009900;
+	border:1px #006600 solid;
+	box-shadow:7px 7px 9px #fff;
+}
+#session{
+	height:440px;
+	width:100%;
+	position:relative;
+}
+#session_block1{
+	background-color:#fff;
+	height:200px;
+	padding-top:70px;
+	padding-bottom:50px;
+	position:relative;
+}
+#session_block1 h1{
+	text-align:center;
+	color:#009900;
+}
+#session_block2{
+	height:120px;
+	background-color:#009900;
+	position:relative;
+}
+#session_block3{
+	height:140px;
+	background-color:#fff;
+	padding-top:10px;
+	padding-bottom:10px;
+	position:relative;
+}
+#session_block3 h3{
+	text-align:center;
+	color:#009900;
+	/*font-size:20px;
+	font-weight:1000;*/
+}
+#session_div1,
+#session_div2{
+	text-align:center;
+	line-height:100px;
+	position:relative;
+}
+#practice{
+	height:260px;
+	width:100%;
+	position:relative;
+}
+#practice_block{
+	height:70px;
+}
+#practice_block2{
+	height:200px;
+	background-color:#009900;
+}
+#practice_description,
+#final_practice{
+	text-align:center;
+	/*font-size:15px;
+	font-weight:600;*/
+	color:#fff;
+}
+#final_practice{
+	line-height:200px;
+}
+#last_section{
+	height:330px;
+	width:100%;
+	position:relative;
+}
+#last_block1{
+	height:30px;
+}
+.asknlearn{
+	height:100px;
+	background-color:#009900;
+	color:#fff;
+	/*font-size:15px;
+	font-weight:600px;*/
+	
+}
+.left-block{
+	padding-top:30px;
+	padding-bottom:20px;
+	text-align:right;
+}
+.right-block{
+	line-height:110px;
+	text-align:left;
+}
+#last_block3{
+	height:20px;
+}
+#last_block4{
+	height:180px;
+	background-color:#009900;
+	color:#fff;
+	/*font-size:15px;
+	font-weight:300;*/
+	text-align:center;
+}
+
+/* ==========================================================================
+    Footer Site Styling
+   ========================================================================== */
+#footer11{
+	text-align:center;
+	color:#fff;
+}
+#footer12,
+#footer13,
+#footer14{
+	text-align:center;
+	color:#fff;
+	/*font-weight:300;*/
+}
+#footer12 a{
+	color:#66ff33;
+	/*font-size:15px;*/
+	text-decoration:none;
+}
+#footer12 a:hover{
+	color:#fff;
+	/*font-weight:600;*/
+}
+.fa{
+	display:inline-block;
+}
+.social-icons .fa-twitter{
+	color:#1da1f2;
+}
+.social-icons .fa-facebook{
+	color:#3b5998;
+}
+.social-icons .fa-youtube{
+	color:#cc181e;
+}
+#footer2{
+	background-color:#4dcb43;
+}
+#copyright{
+	color:#fff;
+	/*font-weight:600;*/
+	text-align:center;
+}
+
+   
+/*------------------------------------------------------
+	RESPONSIVE STYLES 
+--------------------------------------------------------*/
+
+		/* Medium Screen */
+
+@media (min-width:992px){
+	.site-header{
+		height:50px;
+	}
+}
+@media (min-width: 1305px){
+	.site-header{
+		height:50px;
+	}
+}
+
+		/* Small Sreen */
+		
+@media (max-width: 991px) {
+  .main-menu {
+    display: none;
+  }
+
+  .toggle-menu {
+    display: block;
+  }
+
+  .site-header {
+    padding: 0;
+  }
+  .main-menu {
+    display: none;
+    border-top: 1px solid #2f2f2f;
+    text-align: left;
+  }
+  .main-menu ul li {
+    padding: 0;
+    margin: 0;
+    display: block;
+    border-bottom: 1px solid #2f2f2f;
+  }
+  .main-menu ul li:last-child {
+    border-bottom: 0;
+  }
+  .main-menu ul li a {
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+  }
+}
+
+		/* Extra Small Screen */
+		
+@media (max-width: 767px) {
+  .section-home{
+	width:100%;
+	height:auto;
+	}
+	.slider-body{
+	padding-top:102px;
+	position:relative;
+	}
+	
+	#course{
+		height:100%;
+		width:100%;
+	}
+}
+
+
