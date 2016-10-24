@@ -1,2 +1,0 @@
-# XB-MASTER
-css files
