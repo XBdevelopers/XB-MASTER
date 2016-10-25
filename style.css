@@ -67,7 +67,7 @@ a:hover {
 }
 
 #site_logo {
-  background-image: url(http://i.imgur.com/q0SMHPJ.png);
+  background-image: url(../images/logo.png);
   background-repeat: no-repeat;
   background-position: 5px center;
   height: 50px;
@@ -104,7 +104,7 @@ a:hover {
   display: block;
 }
 .main-menu ul li a.current {
-  background: url(http://i.imgur.com/2TzcMpN.png) no-repeat;
+  background: url(../images/active-state.png) no-repeat;
   background-position: center 27px;
 }
 .toggle-menu {
@@ -147,7 +147,7 @@ a:hover {
 	height:auto;
 	width:100%;
 	position:relative;
-	margin-top:0px;
+	margin-top:1px;
 }
 #course_block{
 	height:200px;
